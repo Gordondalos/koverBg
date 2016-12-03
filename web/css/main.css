@@ -713,7 +713,7 @@ mark,
 }
 
 /* line 78, ../bower_components/bootstrap/scss/_type.scss */
-.list-unstyled {
+.list-unstyled, ul {
   padding-left: 0;
   list-style: none;
 }
@@ -2533,7 +2533,7 @@ table td {
 }
 
 /* line 7, ../bower_components/bootstrap/scss/_forms.scss */
-.form-control {
+.form-control, input, textarea, select {
   display: block;
   width: 100%;
   padding: 0.5rem 0.75rem;
@@ -2547,38 +2547,38 @@ table td {
   border-radius: 0.25rem;
 }
 /* line 35, ../bower_components/bootstrap/scss/_forms.scss */
-.form-control::-ms-expand {
+.form-control::-ms-expand, input::-ms-expand, textarea::-ms-expand, select::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 /* line 48, ../bower_components/bootstrap/scss/mixins/_forms.scss */
-.form-control:focus {
+.form-control:focus, input:focus, textarea:focus, select:focus {
   color: #55595c;
   background-color: #fff;
   border-color: #66afe9;
   outline: none;
 }
 /* line 44, ../bower_components/bootstrap/scss/_forms.scss */
-.form-control::placeholder {
+.form-control::placeholder, input::placeholder, textarea::placeholder, select::placeholder {
   color: #999;
   opacity: 1;
 }
 /* line 55, ../bower_components/bootstrap/scss/_forms.scss */
-.form-control:disabled, .form-control[readonly] {
+.form-control:disabled, input:disabled, textarea:disabled, select:disabled, .form-control[readonly], input[readonly], textarea[readonly], select[readonly] {
   background-color: #eceeef;
   opacity: 1;
 }
 /* line 62, ../bower_components/bootstrap/scss/_forms.scss */
-.form-control:disabled {
+.form-control:disabled, input:disabled, textarea:disabled, select:disabled {
   cursor: not-allowed;
 }
 
 /* line 68, ../bower_components/bootstrap/scss/_forms.scss */
-select.form-control:not([size]):not([multiple]) {
+select.form-control:not([size]):not([multiple]), select:not([size]):not([multiple]) {
   height: calc(2.5rem - 2px);
 }
 /* line 73, ../bower_components/bootstrap/scss/_forms.scss */
-select.form-control:focus::-ms-value {
+select.form-control:focus::-ms-value, select:focus::-ms-value {
   color: #55595c;
   background-color: #fff;
 }
@@ -2627,9 +2627,9 @@ select.form-control:focus::-ms-value {
   border-width: 1px 0;
 }
 /* line 142, ../bower_components/bootstrap/scss/_forms.scss */
-.form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control,
+.form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > input.form-control-static, .input-group-sm > textarea.form-control-static, .input-group-sm > select.form-control-static,
 .input-group-sm > .form-control-static.input-group-addon,
-.input-group-sm > .input-group-btn > .form-control-static.btn, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control,
+.input-group-sm > .input-group-btn > .form-control-static.btn, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > input.form-control-static, .input-group-lg > textarea.form-control-static, .input-group-lg > select.form-control-static,
 .input-group-lg > .form-control-static.input-group-addon,
 .input-group-lg > .input-group-btn > .form-control-static.btn {
   padding-right: 0;
@@ -2637,7 +2637,7 @@ select.form-control:focus::-ms-value {
 }
 
 /* line 158, ../bower_components/bootstrap/scss/_forms.scss */
-.form-control-sm, .input-group-sm > .form-control,
+.form-control-sm, .input-group-sm > .form-control, .input-group-sm > input, .input-group-sm > textarea, .input-group-sm > select,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   padding: 0.25rem 0.5rem;
@@ -2646,14 +2646,13 @@ select.form-control:focus::-ms-value {
 }
 
 /* line 165, ../bower_components/bootstrap/scss/_forms.scss */
-select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
-.input-group-sm > select.input-group-addon:not([size]):not([multiple]),
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
   height: 1.8125rem;
 }
 
 /* line 170, ../bower_components/bootstrap/scss/_forms.scss */
-.form-control-lg, .input-group-lg > .form-control,
+.form-control-lg, .input-group-lg > .form-control, .input-group-lg > input, .input-group-lg > textarea, .input-group-lg > select,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   padding: 0.75rem 1.5rem;
@@ -2662,8 +2661,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 }
 
 /* line 177, ../bower_components/bootstrap/scss/_forms.scss */
-select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
-.input-group-lg > select.input-group-addon:not([size]):not([multiple]),
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
   height: 3.16667rem;
 }
@@ -2756,11 +2754,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #5cb85c;
 }
 /* line 17, ../bower_components/bootstrap/scss/mixins/_forms.scss */
-.has-success .form-control {
+.has-success .form-control, .has-success input, .has-success textarea, .has-success select {
   border-color: #5cb85c;
 }
 /* line 21, ../bower_components/bootstrap/scss/mixins/_forms.scss */
-.has-success .form-control:focus {
+.has-success .form-control:focus, .has-success input:focus, .has-success textarea:focus, .has-success select:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #a3d7a3;
 }
 /* line 28, ../bower_components/bootstrap/scss/mixins/_forms.scss */
@@ -2783,11 +2781,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #f0ad4e;
 }
 /* line 17, ../bower_components/bootstrap/scss/mixins/_forms.scss */
-.has-warning .form-control {
+.has-warning .form-control, .has-warning input, .has-warning textarea, .has-warning select {
   border-color: #f0ad4e;
 }
 /* line 21, ../bower_components/bootstrap/scss/mixins/_forms.scss */
-.has-warning .form-control:focus {
+.has-warning .form-control:focus, .has-warning input:focus, .has-warning textarea:focus, .has-warning select:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f8d9ac;
 }
 /* line 28, ../bower_components/bootstrap/scss/mixins/_forms.scss */
@@ -2810,11 +2808,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #d9534f;
 }
 /* line 17, ../bower_components/bootstrap/scss/mixins/_forms.scss */
-.has-danger .form-control {
+.has-danger .form-control, .has-danger input, .has-danger textarea, .has-danger select {
   border-color: #d9534f;
 }
 /* line 21, ../bower_components/bootstrap/scss/mixins/_forms.scss */
-.has-danger .form-control:focus {
+.has-danger .form-control:focus, .has-danger input:focus, .has-danger textarea:focus, .has-danger select:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #eba5a3;
 }
 /* line 28, ../bower_components/bootstrap/scss/mixins/_forms.scss */
@@ -2836,7 +2834,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     vertical-align: middle;
   }
   /* line 320, ../bower_components/bootstrap/scss/_forms.scss */
-  .form-inline .form-control {
+  .form-inline .form-control, .form-inline input, .form-inline textarea, .form-inline select {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -2854,11 +2852,14 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   /* line 336, ../bower_components/bootstrap/scss/_forms.scss */
   .form-inline .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
-  .form-inline .input-group .form-control {
+  .form-inline .input-group .form-control,
+  .form-inline .input-group input,
+  .form-inline .input-group textarea,
+  .form-inline .input-group select {
     width: auto;
   }
   /* line 344, ../bower_components/bootstrap/scss/_forms.scss */
-  .form-inline .input-group > .form-control {
+  .form-inline .input-group > .form-control, .form-inline .input-group > input, .form-inline .input-group > textarea, .form-inline .input-group > select {
     width: 100%;
   }
   /* line 348, ../bower_components/bootstrap/scss/_forms.scss */
@@ -3904,7 +3905,7 @@ tbody.collapse.in {
   border-collapse: separate;
 }
 /* line 18, ../bower_components/bootstrap/scss/_input-group.scss */
-.input-group .form-control {
+.input-group .form-control, .input-group input, .input-group textarea, .input-group select {
   position: relative;
   z-index: 2;
   float: left;
@@ -3912,20 +3913,26 @@ tbody.collapse.in {
   margin-bottom: 0;
 }
 /* line 54, ../bower_components/bootstrap/scss/mixins/_hover.scss */
-.input-group .form-control:focus, .input-group .form-control:active, .input-group .form-control:hover {
+.input-group .form-control:focus, .input-group input:focus, .input-group textarea:focus, .input-group select:focus, .input-group .form-control:active, .input-group input:active, .input-group textarea:active, .input-group select:active, .input-group .form-control:hover, .input-group input:hover, .input-group textarea:hover, .input-group select:hover {
   z-index: 3;
 }
 
 /* line 40, ../bower_components/bootstrap/scss/_input-group.scss */
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control {
+.input-group .form-control,
+.input-group input,
+.input-group textarea,
+.input-group select {
   display: table-cell;
 }
 /* line 47, ../bower_components/bootstrap/scss/_input-group.scss */
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
-.input-group .form-control:not(:first-child):not(:last-child) {
+.input-group .form-control:not(:first-child):not(:last-child),
+.input-group input:not(:first-child):not(:last-child),
+.input-group textarea:not(:first-child):not(:last-child),
+.input-group select:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
@@ -3973,7 +3980,7 @@ tbody.collapse.in {
 }
 
 /* line 121, ../bower_components/bootstrap/scss/_input-group.scss */
-.input-group .form-control:not(:last-child),
+.input-group .form-control:not(:last-child), .input-group input:not(:last-child), .input-group textarea:not(:last-child), .input-group select:not(:last-child),
 .input-group-addon:not(:last-child),
 .input-group-btn:not(:last-child) > .btn,
 .input-group-btn:not(:last-child) > .btn-group > .btn,
@@ -3990,7 +3997,7 @@ tbody.collapse.in {
 }
 
 /* line 133, ../bower_components/bootstrap/scss/_input-group.scss */
-.input-group .form-control:not(:first-child),
+.input-group .form-control:not(:first-child), .input-group input:not(:first-child), .input-group textarea:not(:first-child), .input-group select:not(:first-child),
 .input-group-addon:not(:first-child),
 .input-group-btn:not(:first-child) > .btn,
 .input-group-btn:not(:first-child) > .btn-group > .btn,
@@ -4002,7 +4009,7 @@ tbody.collapse.in {
 }
 
 /* line 142, ../bower_components/bootstrap/scss/_input-group.scss */
-.form-control + .input-group-addon:not(:first-child) {
+.form-control + .input-group-addon:not(:first-child), input + .input-group-addon:not(:first-child), textarea + .input-group-addon:not(:first-child), select + .input-group-addon:not(:first-child) {
   border-left: 0;
 }
 
@@ -7039,7 +7046,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 /* line 29, ../bower_components/bootstrap/scss/utilities/_spacing.scss */
-.my-1 {
+.my-1, input[type=submit], input[type=checkbox] {
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
 }
@@ -7594,4 +7601,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important;
   }
+}
+
+/* line 7, ../../src/sass/project/project.sass */
+input[type=submit], input[type=checkbox] {
+  display: inline-block;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* line 13, ../../src/sass/project/project.sass */
+label {
+  margin-right: 0.5rem;
 }

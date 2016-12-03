@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Название</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -14,6 +15,7 @@
         {% for group in groups %}
             <tr>
                 <td><a href="{{ path('group_show', { 'id': group.id }) }}">{{ group.id }}</a></td>
+                <td><a href="{{ path('group_show', { 'id': group.id }) }}">{{ group.name }}</a></td>
                 <td>
                     <ul>
                         <li>
