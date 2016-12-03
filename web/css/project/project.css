@@ -1,0 +1,39 @@
+/*
+Sass::SyntaxError: "table" failed to @extend ".table".
+The selector ".table" was not found.
+Use "@extend .table !optional" if the extend should be able to fail.
+
+
+Backtrace:
+/home/gordondalos/PhpstormProjects/kover_bg/src/sass/project/project.sass:2
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
+/usr/lib/ruby/vendor_ruby/sass/util/subset_map.rb:105:in `block in each_value'
+/usr/lib/ruby/vendor_ruby/sass/util/subset_map.rb:105:in `each'
+/usr/lib/ruby/vendor_ruby/sass/util/subset_map.rb:105:in `each_value'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/extend.rb:16:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:39:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:278:in `render'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:17:in `block in render'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:16:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/config.rb:23:in `call'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:115:in `_process_changes'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:19:in `block in loop_for'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:15:in `loop'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:15:in `loop_for'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/loop.rb:84:in `_wait_for_changes'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/loop.rb:42:in `block in setup'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \"table\" failed to @extend \".table\".\A The selector \".table\" was not found.\A Use \"@extend .table !optional\" if the extend should be able to fail.\A "; }

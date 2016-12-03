@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "homepage": "https://github.com/Gordondalos/koverBg",
+  "authors": [
+    "Gordondalos <gordondalos@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.5"
+  }
+}

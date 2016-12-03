@@ -1,0 +1,14 @@
+[Sat Dec 03 23:06:12.288586 2016] [authz_core:error] [pid 16559] [client 127.0.0.1:42990] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/
+[Sat Dec 03 23:06:12.721623 2016] [authz_core:error] [pid 16559] [client 127.0.0.1:42990] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/favicon.ico, referer: http://kover_bg.io/
+[Sat Dec 03 23:06:24.741238 2016] [authz_core:error] [pid 16561] [client 127.0.0.1:43004] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/
+[Sat Dec 03 23:06:25.179108 2016] [authz_core:error] [pid 16561] [client 127.0.0.1:43004] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/favicon.ico, referer: http://kover_bg.io/
+[Sat Dec 03 23:09:25.341046 2016] [authz_core:error] [pid 17216] [client 127.0.0.1:43372] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/
+[Sat Dec 03 23:09:25.812930 2016] [authz_core:error] [pid 17216] [client 127.0.0.1:43372] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/favicon.ico, referer: http://kover_bg.io/
+[Sat Dec 03 23:09:26.906749 2016] [authz_core:error] [pid 17216] [client 127.0.0.1:43372] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/
+[Sat Dec 03 23:09:27.244321 2016] [authz_core:error] [pid 17216] [client 127.0.0.1:43372] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/favicon.ico, referer: http://kover_bg.io/
+[Sat Dec 03 23:18:55.922473 2016] [authz_core:error] [pid 19171] [client 127.0.0.1:43878] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/
+[Sat Dec 03 23:18:56.633319 2016] [authz_core:error] [pid 19171] [client 127.0.0.1:43878] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/favicon.ico, referer: http://kover_bg.io/
+[Sat Dec 03 23:19:30.717799 2016] [authz_core:error] [pid 19489] [client 127.0.0.1:43892] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/
+[Sat Dec 03 23:19:31.407420 2016] [authz_core:error] [pid 19489] [client 127.0.0.1:43892] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/favicon.ico, referer: http://kover_bg.io/
+[Sat Dec 03 23:19:32.940034 2016] [authz_core:error] [pid 19489] [client 127.0.0.1:43892] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/
+[Sat Dec 03 23:19:33.550854 2016] [authz_core:error] [pid 19489] [client 127.0.0.1:43892] AH01630: client denied by server configuration: /home/gordondalos/PhpstormProjects/kover_bg/favicon.ico, referer: http://kover_bg.io/
