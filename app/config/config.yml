@@ -6,7 +6,7 @@ imports:
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: en
+    locale: ru
 
 framework:
     #esi:             ~
@@ -70,22 +70,19 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-sonata_block:
-    default_contexts: [cms]
-    blocks:
 
-        # enable the SonataAdminBundle block
-        sonata.admin.block.admin_list:
-            contexts:   [admin]
+fos_user:
+    db_driver: orm # other valid values are 'mongodb' and 'couchdb'
+    firewall_name: main
+    user_class: AppBundle\Entity\User
+    group:
+        group_class: AppBundle\Entity\Group
 
-
-
-
-
-
-
-
-
+    registration:
+        form:
+            type: AppBundle\Form\RegistrationType
+            # if you are using Symfony < 2.8 you should use the type name instead
+            # type: app_user_registration
 
 
 #fos_rest:
